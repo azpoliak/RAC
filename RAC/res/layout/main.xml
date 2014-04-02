@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Random Acts of Kindness"
+            />
+    <EditText
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/textToSend"
+        />
+    <Button
+            android:layout_height="wrap_content"
+            android:layout_width="100dip"
+            android:text="Random"
+            android:onClick="addRandomText"
+            />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="100dip"
+        android:text="Picture"
+        android:id="@+id/addPictureButton"
+        android:onClick="openCamera"
+        />
+    <ImageView
+            android:layout_height="100dip"
+            android:layout_width="fill_parent"
+            android:id="@+id/image"
+            android:visibility="invisible"
+            />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact"
+        android:inputType="number"
+        />
+    <Button
+            android:layout_height="wrap_content"
+            android:layout_width="200dip"
+            android:text="Random Contact"
+            android:id="@+id/randomContactButton"
+            android:onClick="randomContact"
+            />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="100dip"
+        android:text="Send!"
+        android:id="@+id/sendButton"
+        android:onClick="sendMessage"
+        />
+</LinearLayout>
+
